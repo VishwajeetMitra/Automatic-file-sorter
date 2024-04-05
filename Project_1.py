@@ -1,5 +1,6 @@
 # Import the libraries
 
+from tkinter import filedialog
 from os import listdir
 from os.path import isfile, join
 import os
@@ -7,7 +8,7 @@ import shutil
 
 # Obtain the path to be organized
 
-file_path = input(str(r"Enter path:"))
+file_path = filedialog.askdirectory()
 
 # Obtain all the files from the path in list
 
